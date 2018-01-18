@@ -1,5 +1,5 @@
 #background {
-   background: linear-gradient(black, white, black);
+   background: linear-gradient(black,black,white);
   width:2000px;
   height:1000px;
   background-repeat: no-repeat;
@@ -11,16 +11,29 @@ h2{
 }
 @keyframes Thing {
     0% {background-color: black;}
-    100%{background-color: white;}
+    50%{background-color: gold;}
+    75%{background-color: black;}
+    100% {background-color: gold;}
 }
 
 div{
-  transform: translateX(120px);
+  transform: translateY(230px);
   width:100px;
   height:100px;
   position: relative;
   animation-name: Thing;
-  animation-duration: 10s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+div{
+  transform: translateY(1px);
+  width:100px;
+  height:25px;
+  position: relative;
+  animation-name: Thing;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-fill-mode: forwards;
