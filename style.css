@@ -9,6 +9,19 @@ h2{
   box-shadow: 10px 10px;
   color:Gold;
 }
+@keyframes Thing {
+    0% {background-color: black;}
+    100%{background-color: white;}
+}
+
 div{
-  transform
+  transform: translateX(120px);
+  width:100px;
+  height:100px;
+  position: relative;
+  animation-name: Thing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
