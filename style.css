@@ -1,4 +1,5 @@
 #background {
+  /*The gradient turns the end of the page to gold while the rest is black*/
    background: linear-gradient(black,black,gold);
   width:2000px;
   height:1000px;
@@ -10,6 +11,7 @@ h2{
   color:Gold;
 }
 @keyframes Thing {
+  /*The percentages dictate at what length should the color change*/
     0% {background-color: black;}
     50%{background-color: gold;}
     75%{background-color: black;}
@@ -38,6 +40,7 @@ div{
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
+/*The Id below this comment states where the div will be*/
 #thing2{
    transform: translateY(190px);
    height:35px;
@@ -46,5 +49,6 @@ div{
   transform: translateY(190px);
   height:75px;
   width:100px;
+  /*The command below this comment  states what will change, for how long, at what pace, and the delay.*/
   transition: width 2s ease-in-out 1s;
 }
