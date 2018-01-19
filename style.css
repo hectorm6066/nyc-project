@@ -1,5 +1,5 @@
 #background {
-   background: linear-gradient(black,black,white);
+   background: linear-gradient(black,black,gold);
   width:2000px;
   height:1000px;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ h2{
 }
 
 div{
-  transform: translateY(230px);
+  transform: translateY(250px);
   width:100px;
   height:100px;
   position: relative;
@@ -37,4 +37,14 @@ div{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-fill-mode: forwards;
+}
+#thing2{
+   transform: translateY(190px);
+   height:35px;
+}
+#thing2:hover{
+  transform: translateY(190px);
+  height:75px;
+  width:100px;
+  transition: width 2s ease-in-out 1s;
 }
