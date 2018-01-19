@@ -40,7 +40,7 @@ div{
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
-/*The Id below this comment states where the div will be*/
+/*The Id below this comment states where the div will be */
 #thing2{
    transform: translateY(190px);
    height:35px;
